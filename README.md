@@ -6,7 +6,7 @@ Spring Boot demo (SBDem) project with :
 - Error Handling via Controller Advice and Error controller,
 - Thymeleaf + Thymeleaf-extras-springsecurity5,
 - Bootstrap,
-- Lombok (raraly used), 
+- Lombok, 
 - Loggin (Log4j2).
 + Unit and integration tests
 
