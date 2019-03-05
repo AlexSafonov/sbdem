@@ -8,7 +8,7 @@ Spring Boot demo (SBDem) project with :
 - Bootstrap,
 - Lombok (raraly used), 
 - Loggin (Log4j2).
-+ Some unit and integration tests
++ Unit and integration tests
 
 
 
