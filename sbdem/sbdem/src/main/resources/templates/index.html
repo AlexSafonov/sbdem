@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments/header :: head (pageTitle='Welcom')">
+ <title>Placeholder</title>
+   <!-- <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>-->
+</head>
+<body>
+    <header th:include="fragments/header :: header"></header>
+    <div class="container-fluid d-flex " style="background-color:#e2eef6; min-height: 85vh;">
+        <div class="container-fluid" style="width:80%;background-color:#efefef;">
+            <div>
+             <h1 class="text-center"> Welcome to My Test Spring Thymeleaf App</h1>
+            </div>
+            <div class="text-center">
+                 <h3 sec:authorize="isAuthenticated()">
+                     <p>Hello <span sec:authentication="name" ></span>!</p>
+                     <p>This is your <a th:href="@{|/user/${#authentication.name}|}"> info page </a></p>
+                 </h3>
+                <h4 sec:authorize="isAnonymous()"> Please <a th:href="@{/login}">Login </a> or <a th:href="@{/register}">Register</a> </h4>
+                <h4> Here you can create a <a th:href="@{/json-to-table}">html table from any JSON </a> </h4>
+            </div>
+            <div class="container-fluid row justify-content-center" >
+                <img class="img-fluid" th:src="@{/images/15477368265271.jpg}" title="Please logIn">
+            </div>
+            <br>
+          </div >
+    </div>
+    <div th:include="fragments/footer :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments/header :: head (pageTitle='User page')">
+    <title>Placeholder</title>
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>-->
+</head>
+<body>
+<header th:include="fragments/header :: header"></header>
+<p> This is user page. </p>
+<p> In theory here can be some user interface</p>
+<p></p>
+<p></p>
+<div th:include="fragments/footer :: footer"></div>
+</body>
+</html>

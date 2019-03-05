@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="ideaCnP@localhost" uuid="5281fc24-e03f-4e18-a9cd-5010b7cd72fb">
+      <database-info product="PostgreSQL" version="10.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-schemas>ideaCnP:public</introspection-schemas>
+    </data-source>
+  </component>
+</project>

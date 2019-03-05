@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments/header :: head (pageTitle='404')">
+    <title>Placeholder</title>
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>-->
+</head>
+<body>
+<header th:include="fragments/header :: header"></header>
+<div class="container-fluid d-flex " style="background-color:#e2eef6; min-height: 85vh;">
+    <div class="container-fluid" style="width:80%;background-color:#efefef;">
+        <br>
+        <h1 class="text-center text-warning">  Page Does Not Exists</h1>
+        <br>
+        <h3 class="text-center text-warning"> 404</h3>
+    </div>
+</div>
+<div th:include="fragments/footer :: footer"></div>
+</body>
+</html>

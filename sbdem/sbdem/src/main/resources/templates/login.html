@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments/header :: head (pageTitle='Login')">
+    <title>Placeholder</title>
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>-->
+</head>
+<body>
+<header th:include="fragments/header :: header"></header>
+<div class="container-fluid d-flex " style="background-color:#e2eef6; min-height: 85vh;">
+    <div class="container-fluid " style="width:80%;background-color:#efefef;">
+        <div class="text-center">
+            <h1>Custom Login Form</h1>
+            <form  th:action="@{/perform_login}" method="post">
+                <fieldset>
+                    <legend>Please Login</legend>
+                    <div th:if="${param.error}" class="alert alert-danger" role="alert">
+                        Invalid username or password.
+                    </div>
+                 <!--   <div th:if="${param.logout}" class="alert alert-success">
+                        You have been logged out.-->
+                    <div class="form-group">
+                        <label class="text-left" for="username">Username: </label>
+                        <input class="text-left" th:type="text" id="username" th:name="username"  placeholder="Enter Username">
+                    </div>
+                    <div class="form-group">
+                        <label class="text-left" for="password">Password: </label>
+                        <input class="text-left" th:type="password" id="password" th:name="password"  placeholder="Enter password">
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<div th:include="fragments/footer :: footer"></div>
+</body>
+</html>

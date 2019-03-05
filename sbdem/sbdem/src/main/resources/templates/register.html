@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments/header :: head (pageTitle='Register')">
+    <title>Placeholder</title>
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>-->
+</head>
+<body>
+<header th:include="fragments/header :: header"></header>
+<div class="container-fluid d-flex " style="background-color:#e2eef6; min-height: 85vh;">
+    <div class="container-fluid" style="width:80%;background-color:#efefef;">
+        <h2 class="text-center">Register new User</h2>
+        <br></br>
+        <form th:action="@{/register}" th:object="${userForm}" method="POST">
+            <div class="form-group row justify-content-center">
+                <label class="col-2 text-right" for="username">Username: </label>
+                <input class="col-3 form-control" id="username"  type="text" th:field="*{username}"/>
+                <div class="col-1"></div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label class="col-2 text-right" for="Password">Password: </label>
+                <input class="col-3 form-control" id="Password" type="password" th:field="*{password}"/>
+                <div class="col-1"></div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label class="col-2 text-right" for="matchPassword">Repeat password: </label>
+                <input class="col-3 form-control" id="matchPassword" type="password" th:field="*{matchPassword}"/>
+                <div class="col-1"></div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label class="col-2 text-right" for="Email">E-mail: </label>
+                <input class="col-3 form-control" id="Email" type="text" th:field="*{email}"/>
+                <div class="col-1"></div>
+            </div>
+            <div class="form-group row justify-content-center">
+            <button type="submit" class="btn btn-success col col-lg-3">Submit</button>
+            </div>
+            <div class="alert alert-danger col text-center" role="alert" th:if="${#fields.hasErrors()}">
+            <span th:if="${#fields.hasErrors('username')}"
+                 th:errors="*{username}">Not a valid username</span>
+            <span  th:if="${#fields.hasErrors('password')}"
+                 th:errors="*{password}">Not a valid password</span>
+            <div>
+                <span  th:if="${#fields.hasErrors('global')}" th:errors="*{global}"></span>
+                <span  th:if="${#fields.errors('matchPassword')}" th:text="*{matchPassword}">Passwords don't match</span>
+            </div>
+            <span  th:if="${#fields.hasErrors('email')}"
+                 th:errors="*{email}">Not a valid email</span>
+            </div>
+        </form>
+        <br>
+    </div>
+</div>
+<div th:include="fragments/footer :: footer"></div>
+</body>
+</html>

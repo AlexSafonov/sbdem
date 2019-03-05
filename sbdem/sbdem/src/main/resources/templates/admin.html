@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments/header :: head (pageTitle='Welcom')">
+    <title>Placeholder</title>
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>-->
+</head>
+<body>
+<script th:src="@{/js/createTableFromFetchJson.js}"></script>
+<meta name="_csrf" content="${_csrf.token}"/> <meta name="_csrf_header" content="${_csrf.headerName}"/>
+<header th:include="fragments/header :: header"></header>
+<div class="container-fluid d-flex " style="background-color:#e2eef6; min-height: 85vh;">
+        <div class="container-fluid" style="width:95%;background-color:#efefef;">
+            <div class="text-center">
+                <p></p>
+                <H1>Welcome Admin!</H1>
+            </div>
+            <h2 class="text-center">How to:</h2>
+            <p></p>
+            <h4>
+                <p>1. Create user. Fill in username, password and email fields. </p>
+                <p>2. Fully update or create new user. This is a PUT request, so all fields are required. </p>
+                <p>3. Update user info. Username, about user, full name and email fields</p>
+                <p>4. Delete user. Just username. </p>
+                <p> Then click appropriate action  button bellow the form.</p>
+                <p> If there are any verification errors, server response will be represented in a table bellow the control panel.</p>
+            </h4>
+            <div id="errorDiv" class="text-danger text center"></div>
+            <div class="float-right btn-toolbar" role="toolbar">
+                <div class="input-group-prepend"><input placeholder="Username" id="findUserInput">    </div>
+                <div class="btn-group"><button type="button" class="btn btn-primary" id="findUserButton"> Search For User </button></div>
+                <p></p>
+            </div>
+            <div class="text-center" id="findUserDiv"> <p></p></div>
+            <div class="text-center">
+                <p></p>
+                <table class="table-sm table-info">
+                    <tr>
+                        <td>SpUserId:</td>
+                        <td><input id="spUserId"></td>
+                        <td>CreatedAt:</td>
+                        <td><input id="createdAt"></td>
+                        <td>Username:</td>
+                        <td><input id="username"></td>
+                        <td>Password:</td>
+                        <td><input id="password"></td>
+                        <td>Email:</td>
+                        <td><input id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>About User:</td>
+                        <td><input id="aboutUser"></td>
+                        <td>Avatar Image Url:</td>
+                        <td><input id="avatarImgUrl"></td>
+                        <td>SpRoleId:</td>
+                        <td><input id="spRoleId"></td>
+                        <td>Role:</td>
+                        <td><input id="role"></td>
+                        <td>Enabled:</td>
+                        <td><input id="enabled"></td>
+                    </tr>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td><input id="fullName"></td>
+                        <td>Account Non Expired:</td>
+                        <td><input id="accountNonExpired"></td>
+                        <td>Account Non Locked:</td>
+                        <td><input id="accountNonLocked"></td>
+                        <td>Credentials Non Expired</td>
+                        <td><input id="credentialsNonExpired"></td>
+                    </tr>
+                </table>
+                <div class="btn-toolbar mb-" role="toolbar" style="justify-content: center; display: flex;">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-primary" id="createNewUserButton">Create User</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-primary" id="fullUpdateButton">Create or Update User</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-primary" id="patchButton">Update User Info</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-primary" id="deleteUserButton">Delete User</button>
+                    </div>
+                </div>
+                <div id="ApiPanel">
+                </div>
+                </div>
+            <div id="responseFromServer">
+                <p></p>
+            </div>
+                <div class="text-center">
+                    <H2>All users of this App.</H2>
+                    <div id="forUserTable">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<div th:include="fragments/footer :: footer"></div>
+</body>
+</html>

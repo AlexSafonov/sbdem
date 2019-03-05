@@ -1,0 +1,4 @@
+INSERT INTO "spusers"("created_at","username","password","email","is_account_non_expired","is_account_non_locked","is_credentials_non_expired","is_enabled") VALUES (NOW(),'TESTUSER','$2a$10$FbaXJnKPIXWELDKSa6JtqO7txe2g.Ldxg2C75c9AcwU2kHhnry/NW','testbot@botmail.com',TRUE ,TRUE,TRUE,TRUE);
+INSERT INTO "spusers_sproles"("spuser_id","sprole_id") SELECT u."spuser_id", r."sprole_id"  FROM "spusers" u, "sproles" r WHERE "sprole" = 'ROLE_USER' AND "username" = 'TESTUSER';
+INSERT INTO "spusers"("created_at","username","password","email","is_account_non_expired","is_account_non_locked","is_credentials_non_expired","is_enabled") VALUES (NOW(),'TESTADMIN','$2a$10$FbaXJnKPIXWELDKSa6JtqO7txe2g.Ldxg2C75c9AcwU2kHhnry/NW','testadmin@botmail.com',TRUE ,TRUE,TRUE,TRUE);
+INSERT INTO "spusers_sproles"("spuser_id","sprole_id") SELECT u."spuser_id", r."sprole_id"  FROM "spusers" u, "sproles" r WHERE "sprole" = 'ROLE_ADMIN' AND "username" = 'TESTADMIN';

@@ -1,0 +1,26 @@
+h1{
+    color: cadetblue;
+}
+span.denied{
+    text-align: center;
+    font-size: x-large;
+    color: firebrick;
+}
+h2{
+    color: chocolate;
+}
+table{
+    border-collapse:collapse ;
+}
+table th, table td{
+    padding: 5px;
+}
+span.errorMsg{
+    color: red;
+}
+div.fixed{
+    width: auto;
+    height: auto;
+    background: aqua;
+    position: fixed;
+}

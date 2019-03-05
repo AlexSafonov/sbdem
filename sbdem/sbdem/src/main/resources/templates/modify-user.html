@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments/header :: head (pageTitle='Modify user')">
+    <title>Placeholder</title>
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>-->
+</head>
+<body>
+<header th:include="fragments/header :: header"></header>
+<div class="container-fluid d-flex " style="background-color:#e2eef6; min-height: 85vh;">
+    <div class="container-fluid " style="width:80%;background-color:#efefef;">
+        <div class="text-center">
+            <h1> User Profile Page</h1>
+            <h3> Hello, <span  sec:authentication="name"></span> </h3>
+            <h3> Here you can modify your user info. </h3>
+            <h2 th:text="${rdrAtr}">  </h2>
+            <h2 class="text-center" th:text="${imageRdrAtr}">  </h2>
+        </div>
+        <form th:action="@{modify-user}" th:object="${userModifyForm}" method="post">
+            <div class="form-group row justify-content-center">
+                <label class="col-4 text-right" for="fullName"> Change your name: </label>
+                <input class="col-4 form-control" id="fullName" type="text" th:field="*{fullName}">
+                <div class="col-1"></div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <label class="col-4 text-right" for="email"> Change your email:</label>
+                <input class="col-4 form-control" id="email" type="text" th:field="*{email}">
+                <div class="col-1"></div>
+            </div>
+            <div class="form-group row justify-content-center">
+                 <label class="col-4 text-right" valign="top">Tell about yourself:</label>
+                 <textarea class="col-4 form-control" rows="5" cols="30" id="=aboutUser" th:field="*{aboutUser}"></textarea>
+                <div class="col-1"></div>
+            </div>
+                <div class="form-group row justify-content-center">
+                    <button type="submit" class="btn btn-success col-3">Submit</button>
+                </div>
+            <div class="alert alert-danger col text-center" role="alert" th:if="${#fields.hasErrors()}">
+            <span class="errorMsg" th:if="${#fields.hasErrors('fullName')}"
+                  th:errors="*{fullName}"> Msx length is 30 letters</span>
+                <span class="errorMsg" th:if="${#fields.hasErrors('email')}"
+                      th:errors="*{email}"> Not a vaild email</span>
+                <span calss="errorMsg" th:if="${#fields.hasErrors('aboutUser')}"
+                      th:errors="*{aboutUser}">Max lengths = 255</span>
+            </div>
+        </form>
+        </br>
+        </br>
+        </br>
+        <form th:action="@{modify-user-img}" enctype="multipart/form-data" method="post" >
+            <div class="text-center">
+                <p>Please upload your avatar image.  TIFF, JPEG, GIF, PNG are accepted.</p>
+                <p>Image will be resized to 500x500 pxl</p>
+            </div>
+            <div class="container-fluid" style="width:50%;">
+                <div class="custom-file" >
+                    <input class="custom-file-input" id="customFile" type="file" name="mlp">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+            </div>
+            </br>
+            <div class="form-group row justify-content-center">
+                <button type="submit" class="btn btn-success col-3">Submit</button>
+            </div>
+        </form>
+        <br>
+        <div class="row justify-content-center">
+            <img th:src="@{${userImage}}" title="Current Avatar" height="500" width="500">
+        </div>
+        <br>
+    </div>
+</div>
+
+<div th:include="fragments/footer :: footer"></div>
+</body>
+</html>

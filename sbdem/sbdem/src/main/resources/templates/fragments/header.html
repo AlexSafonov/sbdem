@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:fragment="head (pageTitle)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title th:text="${pageTitle}"></title> <!-- -<- temporal -->
+    <link rel='stylesheet' th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+<body>
+    <div th:fragment="header">
+        <nav class="navbar navbar-expand-lg navbar-light style=" style="background-color: palegreen">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerD" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <a class="navbar-brand" th:href="@{/}">App Name</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/json-to-table}">Json2TAble</a>
+                    </li>
+                    <li sec:authorize="isAuthenticated()" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            User Section
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" th:href="@{${'/user/'}+${#authentication.name}}" >personal information</a>
+                            <a class="dropdown-item" th:href="@{/user/modify-user}">Modify your personal information</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 mr-4">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Not implemented yet</button>
+                </form>
+                <ul class="navbar-nav">
+                    <span sec:authorize="isAnonymous()">
+                         <li class="nav-item">
+                             <a class="nav-link" th:href="@{/register}">Sign Up</a>
+                         </li>
+                    </span>
+                    <span sec:authorize="isAnonymous()">
+                         <li class="nav-item">
+                             <a class="nav-link" th:href="@{/login}">Login</a>
+                         </li>
+                    </span>
+                </ul>
+                <span sec:authorize="isAuthenticated()">
+                    <form th:action="@{/logout}" method="POST">
+                        <input type="submit" value="Logout"/>
+                    </form>
+                </span >
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

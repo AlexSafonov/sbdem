@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:fragment="head (pageTitle)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title th:text="${pageTitle}"></title> <!-- -<- temporal -->
+    <link rel='stylesheet' th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+<body>
+    <div th:fragment="footer">
+        <div class="container-fluid bg-dark text-light" >
+            <!-- Footer -->
+            <br>
+            <footer class="page-footer">
+                <!-- Footer Links -->
+                <div class="container-fluid text-center text-md-left">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-md-0 mt-3">
+                            <!-- Content -->
+                            <h5 class="text-uppercase">Footer Placeholder</h5>
+                            <p>Rows and columns. Some useful info.</p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="clearfix w-100 d-md-none pb-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <!-- Links -->
+                            <h5 class="text-uppercase">Links</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 4</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3">
+
+                            <!-- Links -->
+                            <h5 class="text-uppercase">Links</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 4</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- Footer Links -->
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 20XX Copyright:
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+</div>
+</body>
+</html>

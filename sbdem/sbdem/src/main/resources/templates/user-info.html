@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments/header :: head (pageTitle='User Info')">
+    <title>Placeholder</title>
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>-->
+</head>
+<body>
+    <header th:include="fragments/header :: header"></header>
+    <div class="container-fluid d-flex " style="background-color:#e2eef6; min-height: 85vh;">
+        <div class="container-fluid" style="width:80%;background-color:#efefef;">
+            <div class="text-center">
+            <H1>This page contain info about user: <span th:text="${user.username}"></span> </H1>
+            <div th:object="${user}">
+            <div><img th:attr="src=*{avatarImgUrl}" title="Current Avatar" height="500" width="500"></div>
+                </br>
+                <div class="alert alert-primary" role="alert">
+                <div class="row justify-content-center" th:if="${user.username.equals(#authentication.name)}">
+                    <span class="col-4 text-right" >Created at: </span>
+                    <span class="col-4 text-left" th:text="*{createdAt}"> </span>
+                </div>
+                <div class="row justify-content-center">
+                    <span  class="col-4 text-right">Username: </span>
+                    <span class="col-4 text-left" th:text="*{username}"> </span>
+                </div>
+                <div class="row justify-content-center" th:if="${user.username.equals(#authentication.name)}">
+                    <span  class="col-4 text-right"> Email:: </span>
+                    <span class="col-4 text-left" th:text="*{email}"> </span>
+                </div>
+                <div class="row justify-content-center">
+                    <span  class="col-4 text-right" >Full name: </span>
+                    <span class="col-4 text-left" th:text="*{fullname}"></span>
+                </div>
+                <div class="row justify-content-center">
+                    <span  class="col-4 text-right">About User: </span>
+                    <span class="col-4 text-left" th:text="*{aboutUser}"></span>
+                </div>
+                </div>
+            </div>
+            </div>
+            <br>
+        </div >
+    </div>
+    <div th:include="fragments/footer :: footer"></div>
+</body>
+</html>

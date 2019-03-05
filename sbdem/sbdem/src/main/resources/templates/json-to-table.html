@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments/header :: head (pageTitle='JSON2TABLE')">
+    <title>Placeholder</title>
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>-->
+</head>
+<body>
+<script th:src="@{/js/jsonToHtmlTable.js}"></script>
+<header th:include="fragments/header :: header"></header>
+<div class="container-fluid d-flex " style="background-color:#e2eef6; min-height: 85vh;">
+    <div class="container-fluid" style="width:80%;background-color:#efefef;">
+        <p></p>
+        <table class="table table-bordered" style="width: min-content">
+            <tr>
+                <td>
+                    <div id="controlPanel"></div>
+                </td>
+
+                <td>
+                    HTML Result:
+                    <div id = "showHtml"> </div>
+                </td>
+            </tr>
+        </table>
+        <div id="tableDiv"></div>
+    </div>
+</div>
+<div th:include="fragments/footer :: footer"></div>
+</body>
+</html>
