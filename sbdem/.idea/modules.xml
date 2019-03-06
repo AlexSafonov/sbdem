@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/sbdem/sbdem.iml" filepath="$PROJECT_DIR$/sbdem/sbdem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sbdem.iml" filepath="$PROJECT_DIR$/sbdem.iml" />
     </modules>
   </component>
 </project>

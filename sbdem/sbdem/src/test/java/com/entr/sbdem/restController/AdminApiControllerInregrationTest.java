@@ -109,6 +109,7 @@ public class AdminApiControllerInregrationTest {
     @WithMockUser(roles = {"ADMIN"}, username = "TESTADMIN")
     public void createUserWithValidData_returnUserEntity() throws Exception{
         UserRegisterForm newUser = new UserRegisterForm("NewUser","Password","Password","email@mailmail.com");
+        UserRegisterForm a = new UserRegisterForm();
         String newUserAsJson = new ObjectMapper().writeValueAsString(newUser);
         this.mvc.perform(post("/admin/api/create-user")
                 .with(csrf())

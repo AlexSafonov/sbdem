@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ideaCnP@localhost" uuid="5281fc24-e03f-4e18-a9cd-5010b7cd72fb">
+    <data-source source="LOCAL" name="ideacnp@localhost" uuid="b538e2ec-1852-445b-8d6a-1f950d00c874">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/ideaCnP</jdbc-url>
-      <driver-properties>
-        <property name="ApplicationName" value="DataGrip" />
-      </driver-properties>
+      <jdbc-url>jdbc:postgresql://localhost:5432/ideacnp</jdbc-url>
     </data-source>
   </component>
 </project>
