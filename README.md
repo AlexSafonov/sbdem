@@ -2,7 +2,8 @@
 Spring Boot demo (SBDem) project with :
 - Spring Data JPA + PostgreSQL,
 - Spring Security,
-- regular Spring MVC and partly with REST AIP+vanila JS(no frameworks),
+- regular Spring MVC
+- REST AIP+vanila JS(no frameworks),
 - Error Handling via Controller Advice and Error controller,
 - Thymeleaf + Thymeleaf-extras-springsecurity5,
 - Bootstrap,
