@@ -5,9 +5,12 @@ import com.entr.sbdem.config.AuthenticationFacade;
 import com.entr.sbdem.entity.SpUser;
 import com.entr.sbdem.exception.StorageException;
 import com.entr.sbdem.model.UserModifyForm;
+import com.entr.sbdem.service.AWSs3StorageService;
+import com.entr.sbdem.service.FileSystemStorageService;
 import com.entr.sbdem.service.SpUserService;
 import com.entr.sbdem.service.StorageService;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -32,7 +35,8 @@ public class UserController {
     private final AuthenticationFacade authenticationFacade;
 
     public UserController(final SpUserService userService,
-                          final StorageService storageService,
+
+                          final AWSs3StorageService storageService ,
                           final AuthenticationFacadeImpl authenticationFacadeImpl) {
         this.userService = userService;
         this.storageService = storageService;
@@ -83,7 +87,7 @@ public class UserController {
         Authentication au = authenticationFacade.getAuthentication();
         storageService.storeUserAvatarImage(mlp,au.getName());
         //Saving image to desktop/sbdem/upload/uploadImages. See FileSystemStorageService
-        String avatarImgUrl = "/upload/uploadImages/"+au.getName()+"/"+filename;
+        String avatarImgUrl = "https://s3.eu-west-2.amazonaws.com/sbdems3bucket/upload/uploadImages/"+au.getName()+"/"+filename;
         userService.updateUsersAvatarImg(avatarImgUrl,au.getName());
         redirectAttributes.addFlashAttribute("imageRdrAtr", "Your image Avatar was successfully updated");
 

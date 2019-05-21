@@ -4,6 +4,7 @@ import com.entr.sbdem.entity.SpUser;
 import com.entr.sbdem.exception.StorageException;
 import com.entr.sbdem.exception.UserNotFoundException;
 import com.entr.sbdem.model.UserModifyForm;
+import com.entr.sbdem.service.AWSs3StorageService;
 import com.entr.sbdem.service.FileSystemStorageService;
 import com.entr.sbdem.service.SpUserService;
 import com.entr.sbdem.service.StorageService;
@@ -55,7 +56,7 @@ public class UserControllerTest {
     @Autowired
     private SpUserService userService;
     @MockBean
-    private StorageService storageService;
+    private AWSs3StorageService storageService;
 
     private MockMvc mvc;
 

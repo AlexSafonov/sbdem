@@ -120,7 +120,7 @@ public class AdminApiControllerInregrationTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.email", is(newUser.getEmail())))
                 .andDo(print());
         SpUser user = userService.findUserByUsername(newUser.getUsername());
-        assertThat(user.getAvatarImgUrl(), is("/images/noImg.jpg"));
+        assertThat(user.getAvatarImgUrl(), is("/images/no-image.jpg"));
     }
 
     @Test

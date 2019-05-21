@@ -6,6 +6,8 @@ import com.entr.sbdem.exception.UserNotFoundException;
 import com.entr.sbdem.model.OkMessage;
 import com.entr.sbdem.model.UserModifyForm;
 import com.entr.sbdem.model.UserRegisterForm;
+import com.entr.sbdem.service.AWSs3StorageService;
+import com.entr.sbdem.service.FileSystemStorageService;
 import com.entr.sbdem.service.SpUserService;
 import com.entr.sbdem.service.StorageService;
 import org.springframework.http.HttpStatus;
@@ -23,7 +25,7 @@ public class AdminApiController {
     private final SpUserService userService;
     private final StorageService storageService;
 
-    public AdminApiController(final SpUserService spUserService, final StorageService storageService) {
+    public AdminApiController(final SpUserService spUserService, final AWSs3StorageService storageService) {
         this.userService = spUserService;
         this.storageService = storageService;
     }

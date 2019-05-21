@@ -20,15 +20,14 @@ import java.util.stream.Stream;
 @Service
 public class FileSystemStorageService implements StorageService {
 
-    private final List<String> imageTypList;
-    private  final FileUploadPathProperties uploadPathProperties;
+    private final FileUploadPathProperties uploadPathProperties;
 
     public FileSystemStorageService(final FileUploadPathProperties uploadPathProperties) {
         this.uploadPathProperties = uploadPathProperties;
         //Saving into external dir
         //Path is in FileUploadPathProperties.  desktop/sbdem/upload/uploadImages
         //Main path of app is desktop/sbdem/sbdem/srs/main.
-        imageTypList = new ArrayList<>(Arrays.asList("tiff", "jpeg","jpg", "gif", "png"));
+
     }
     @Override
     public boolean fileIsImage(MultipartFile file){
@@ -66,21 +65,6 @@ public class FileSystemStorageService implements StorageService {
         } catch (IOException e){
             throw new StorageException("Failed to store file " + file.getOriginalFilename(), e);
         }
-    }
-
-    @Override
-    public Stream<Path> loadAll() {
-        return null;
-    }
-
-    @Override
-    public Path load(String filename) {
-        return null;
-    }
-
-    @Override
-    public void deleteFile() {
-
     }
 
     @Override

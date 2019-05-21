@@ -17,19 +17,12 @@ import java.io.IOException;
 
 @Configuration
 public class BeanConfig {
-    @Bean
-    public BCryptPasswordEncoder passwordEncoder(){
-        return  new BCryptPasswordEncoder();
-    }
 
     @Value("${aws.keyID}")
     private String aswKeyID;
 
     @Value("${aws.secretKey}")
     private String awsSecretKey;
-
-    @Value("${aws.bucketName}")
-    private String awsBucketName;
 
     @Value("${aws.region}")
     private String awsRegion;
@@ -39,6 +32,11 @@ public class BeanConfig {
         BasicAWSCredentials awsCredentials = new BasicAWSCredentials(aswKeyID,awsSecretKey);
         return AmazonS3ClientBuilder.standard().withRegion(Regions.fromName(awsRegion))
                 .withCredentials(new AWSStaticCredentialsProvider(awsCredentials)).build();
+    }
+
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder(){
+        return  new BCryptPasswordEncoder();
     }
 
 }

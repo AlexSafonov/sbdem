@@ -1,180 +1,76 @@
-2019-05-21 21:48:09,531 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SbdemApplication on RainbowAndStars with PID 7084 (C:\Users\SpaceUnicorn\Documents\GitHub\sbdem\sbdem\sbdem\target\classes started by SpaceUnicorn in C:\Users\SpaceUnicorn\Documents\GitHub\sbdem\sbdem)
-2019-05-21 21:48:09,536 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2019-05-21 21:48:09,569 INFO o.s.c.s.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@352a5c51: startup date [Tue May 21 21:48:09 GMT+03:00 2019]; root of context hierarchy
-2019-05-21 21:48:10,536 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8f6f3145] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-21 21:48:10,953 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2019-05-21 21:48:10,963 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2019-05-21 21:48:10,974 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2019-05-21 21:48:10,975 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.35
-2019-05-21 21:48:11,029 INFO o.a.j.l.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\python\Scripts\;C:\python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Lucidlogix Technologies\VIRTU MVP;C:\Program Files\Java\jdk1.8.0_161\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\Go\bin;C:\Program Files\nodejs\;E:\Git\cmd;C:\Users\SpaceUnicorn\AppData\Local\GitHubDesktop\bin;C:\Users\SpaceUnicorn\go\bin;C:\Users\SpaceUnicorn\AppData\Roaming\npm;E:\Docker Toolbox;E:\maven\apache-maven-3.6.1\bin;E:\heroku\bin;.]
-2019-05-21 21:48:11,121 INFO o.a.j.l.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
-2019-05-21 21:48:11,121 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1555 ms
-2019-05-21 21:48:11,201 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-05-21 21:48:11,202 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-05-21 21:48:11,202 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2019-05-21 21:48:11,202 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
-2019-05-21 21:48:11,202 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
-2019-05-21 21:48:11,203 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
-2019-05-21 21:48:11,203 INFO o.s.b.w.s.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
-2019-05-21 21:48:11,319 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2019-05-21 21:48:12,164 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2019-05-21 21:48:12,205 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
-2019-05-21 21:48:12,214 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+2019-05-22 00:51:00,873 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SbdemApplication on RainbowAndStars with PID 7156 (C:\Users\SpaceUnicorn\Documents\GitHub\sbdem\sbdem\sbdem\target\classes started by SpaceUnicorn in C:\Users\SpaceUnicorn\Documents\GitHub\sbdem\sbdem)
+2019-05-22 00:51:00,878 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-22 00:51:00,913 INFO o.s.c.s.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2865340d: startup date [Wed May 22 00:51:00 GMT+03:00 2019]; root of context hierarchy
+2019-05-22 00:51:01,925 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d144b76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-22 00:51:02,333 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-05-22 00:51:02,343 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-05-22 00:51:02,354 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-05-22 00:51:02,355 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.35
+2019-05-22 00:51:02,358 INFO o.a.j.l.DirectJDKLog [localhost-startStop-1] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\python\Scripts\;C:\python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Lucidlogix Technologies\VIRTU MVP;C:\Program Files\Java\jdk1.8.0_161\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\Go\bin;C:\Program Files\nodejs\;E:\Git\cmd;C:\Users\SpaceUnicorn\AppData\Local\GitHubDesktop\bin;C:\Users\SpaceUnicorn\go\bin;C:\Users\SpaceUnicorn\AppData\Roaming\npm;E:\Docker Toolbox;E:\maven\apache-maven-3.6.1\bin;E:\heroku\bin;.]
+2019-05-22 00:51:02,498 INFO o.a.j.l.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-05-22 00:51:02,499 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1589 ms
+2019-05-22 00:51:02,579 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-22 00:51:02,580 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-22 00:51:02,580 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-22 00:51:02,580 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-22 00:51:02,580 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-05-22 00:51:02,581 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-05-22 00:51:02,581 INFO o.s.b.w.s.ServletRegistrationBean [localhost-startStop-1] Servlet dispatcherServlet mapped to [/]
+2019-05-22 00:51:02,699 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-05-22 00:51:03,475 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-05-22 00:51:03,515 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-05-22 00:51:03,524 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-05-21 21:48:12,260 INFO o.h.Version [restartedMain] HHH000412: Hibernate Core {5.2.17.Final}
-2019-05-21 21:48:12,261 INFO o.h.c.Environment [restartedMain] HHH000206: hibernate.properties not found
-2019-05-21 21:48:12,290 INFO o.h.a.c.r.j.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-05-21 21:48:12,374 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2019-05-21 21:48:12,387 INFO o.h.e.j.e.i.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
-2019-05-21 21:48:12,388 INFO o.h.t.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3b71497a
-2019-05-21 21:48:15,703 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-21 21:48:16,040 INFO o.h.h.i.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
-2019-05-21 21:48:16,930 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@551c3d43, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b1dacfc, org.springframework.security.web.header.HeaderWriterFilter@41af077e, org.springframework.security.web.csrf.CsrfFilter@42f279f6, com.entr.sbdem.security.CsrfHeaderFilter@11601944, org.springframework.security.web.authentication.logout.LogoutFilter@2b709445, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3af58681, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43591a64, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71634981, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23db46a9, org.springframework.security.web.session.SessionManagementFilter@4719fcb3, org.springframework.security.web.access.ExceptionTranslationFilter@36225e7b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28c0bd5d]
-2019-05-21 21:48:16,988 INFO o.s.w.s.h.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-05-21 21:48:17,145 INFO o.s.w.s.m.m.a.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@352a5c51: startup date [Tue May 21 21:48:09 GMT+03:00 2019]; root of context hierarchy
-2019-05-21 21:48:17,182 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-05-21 21:48:17,210 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public java.lang.String com.entr.sbdem.controller.CustomErrorController.handleError(javax.servlet.http.HttpServletRequest,java.lang.String)
-2019-05-21 21:48:17,213 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/fragments/header],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.FragmentController.getHeader()
-2019-05-21 21:48:17,213 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/fragments/footer],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.FragmentController.getFooter()
-2019-05-21 21:48:17,214 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/logger],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.Log4j2Controller.loggerTest()
-2019-05-21 21:48:17,215 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/register],methods=[POST]}" onto public java.lang.String com.entr.sbdem.controller.RegisterController.processRegistration(com.entr.sbdem.model.UserRegisterForm,org.springframework.validation.Errors,org.springframework.ui.Model,org.springframework.web.bind.support.SessionStatus)
-2019-05-21 21:48:17,216 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/register],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.RegisterController.userRegForm(org.springframework.ui.Model)
-2019-05-21 21:48:17,217 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/ || /index],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.RootSimpleController.get()
-2019-05-21 21:48:17,217 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/json-to-table],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.RootSimpleController.getJsonToTable()
-2019-05-21 21:48:17,217 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.RootSimpleController.loginPage()
-2019-05-21 21:48:17,219 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user/status],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.entr.sbdem.controller.UserController.status()
-2019-05-21 21:48:17,219 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user/{username}],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.UserController.getUserInfo(java.lang.String,org.springframework.ui.Model)
-2019-05-21 21:48:17,220 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.UserController.getUserPage()
-2019-05-21 21:48:17,220 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user/modify-user],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.UserController.getProfilePage(org.springframework.ui.Model)
-2019-05-21 21:48:17,220 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user/modify-user],methods=[POST]}" onto public java.lang.String com.entr.sbdem.controller.UserController.updateUsPrForm(com.entr.sbdem.model.UserModifyForm,org.springframework.validation.Errors,org.springframework.web.bind.support.SessionStatus,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
-2019-05-21 21:48:17,220 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user/modify-user-img],methods=[POST]}" onto public java.lang.String com.entr.sbdem.controller.UserController.updateAvImg(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws com.entr.sbdem.exception.StorageException
-2019-05-21 21:48:17,225 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/get-user/{username}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.entr.sbdem.entity.SpUser> com.entr.sbdem.restController.AdminApiController.getUserByUsername(java.lang.String) throws com.entr.sbdem.exception.UserNotFoundException
-2019-05-21 21:48:17,226 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/update-user-info/{username}],methods=[PATCH],consumes=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.entr.sbdem.restController.AdminApiController.updateUserInfo(java.lang.String,com.entr.sbdem.model.UserModifyForm)
-2019-05-21 21:48:17,226 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/create-user],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.entr.sbdem.entity.SpUser> com.entr.sbdem.restController.AdminApiController.createUser(com.entr.sbdem.model.UserRegisterForm) throws com.entr.sbdem.exception.UserAlreadyExistsException
-2019-05-21 21:48:17,227 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/get-all-users],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.entr.sbdem.entity.SpUser>> com.entr.sbdem.restController.AdminApiController.getAllUsers()
-2019-05-21 21:48:17,227 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/delete-user/{username}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.entr.sbdem.restController.AdminApiController.deleteUser(java.lang.String) throws com.entr.sbdem.exception.UserNotFoundException
-2019-05-21 21:48:17,227 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/full-update-user/{id}],methods=[PUT],consumes=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.entr.sbdem.restController.AdminApiController.fullUpdateUser(java.lang.String,com.entr.sbdem.entity.SpUser) throws com.entr.sbdem.exception.UserNotFoundException
-2019-05-21 21:48:17,228 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.entr.sbdem.restController.adminPageController.getAdminPage()
-2019-05-21 21:48:17,261 INFO o.s.w.s.h.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-05-21 21:48:17,261 INFO o.s.w.s.h.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-05-21 21:48:17,261 INFO o.s.w.s.h.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/upload/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-05-21 21:48:17,261 INFO o.s.w.s.h.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2019-05-21 21:48:17,276 INFO o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [restartedMain] Detected @ExceptionHandler methods in customMvcResponseEntityExceptionHandle
-2019-05-21 21:48:17,276 INFO o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [restartedMain] Detected @ExceptionHandler methods in restResponseEntityExceptionHandler
-2019-05-21 21:48:17,363 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
-2019-05-21 21:48:17,583 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2019-05-21 21:48:17,615 INFO o.s.j.e.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
-2019-05-21 21:48:17,617 INFO o.s.j.e.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
-2019-05-21 21:48:17,622 INFO o.s.j.e.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-2019-05-21 21:48:17,632 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2019-05-21 21:48:17,640 INFO o.a.j.l.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
-2019-05-21 21:48:17,651 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2019-05-21 21:48:17,655 INFO o.s.b.StartupInfoLogger [restartedMain] Started SbdemApplication in 8.544 seconds (JVM running for 9.429)
-2019-05-21 21:48:25,198 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
-2019-05-21 21:48:25,198 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
-2019-05-21 21:48:25,214 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
-2019-05-21 21:48:45,191 WARN c.e.s.c.CustomErrorController [http-nio-8080-exec-9] ERROR_STATUS_CODE 404
-2019-05-21 21:48:45,261 WARN c.e.s.c.CustomErrorController [http-nio-8080-exec-7] ERROR_STATUS_CODE 404
-2019-05-21 21:50:36,307 ERROR c.e.s.e.CustomMvcResponseEntityExceptionHandle [http-nio-8080-exec-3] User with username: user.avatarImgUrl does not exists
-com.entr.sbdem.exception.UserNotFoundException: User with username: user.avatarImgUrl does not exists
-	at com.entr.sbdem.service.SpUserServiceImpl.findUserByUsername(SpUserServiceImpl.java:37) ~[classes/:?]
-	at com.entr.sbdem.controller.UserController.getUserInfo(UserController.java:49) ~[classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) [spring-webmvc-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981) [spring-webmvc-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:873) [spring-webmvc-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858) [spring-webmvc-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:63) [spring-webmvc-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at com.entr.sbdem.security.CsrfHeaderFilter.doFilterInternal(CsrfHeaderFilter.java:29) [classes/:?]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.11.RELEASE.jar:5.0.11.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_161]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_161]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.35.jar:8.5.35]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-2019-05-21 21:50:36,317 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved exception caused by handler execution: com.entr.sbdem.exception.UserNotFoundException: User with username: user.avatarImgUrl does not exists
-2019-05-21 21:50:58,692 WARN c.e.s.c.CustomErrorController [http-nio-8080-exec-1] ERROR_STATUS_CODE 404
-2019-05-21 21:50:58,780 WARN c.e.s.c.CustomErrorController [http-nio-8080-exec-8] ERROR_STATUS_CODE 404
+2019-05-22 00:51:03,569 INFO o.h.Version [restartedMain] HHH000412: Hibernate Core {5.2.17.Final}
+2019-05-22 00:51:03,571 INFO o.h.c.Environment [restartedMain] HHH000206: hibernate.properties not found
+2019-05-22 00:51:03,599 INFO o.h.a.c.r.j.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-05-22 00:51:03,682 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-05-22 00:51:03,695 INFO o.h.e.j.e.i.LobCreatorBuilderImpl [restartedMain] HHH000422: Disabling contextual LOB creation as connection was null
+2019-05-22 00:51:03,696 INFO o.h.t.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4340dde1
+2019-05-22 00:51:06,679 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-22 00:51:07,017 INFO o.h.h.i.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2019-05-22 00:51:07,883 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f9846b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@29a91603, org.springframework.security.web.header.HeaderWriterFilter@4eaca7ef, org.springframework.security.web.csrf.CsrfFilter@16907c1e, com.entr.sbdem.security.CsrfHeaderFilter@6cb56b01, org.springframework.security.web.authentication.logout.LogoutFilter@4c6c888c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11205aff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fd5b2c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c3f5bec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ac2512e, org.springframework.security.web.session.SessionManagementFilter@6568808d, org.springframework.security.web.access.ExceptionTranslationFilter@ccdb8f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54ef2964]
+2019-05-22 00:51:07,940 INFO o.s.w.s.h.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-22 00:51:08,097 INFO o.s.w.s.m.m.a.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2865340d: startup date [Wed May 22 00:51:00 GMT+03:00 2019]; root of context hierarchy
+2019-05-22 00:51:08,125 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-22 00:51:08,152 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public java.lang.String com.entr.sbdem.controller.CustomErrorController.handleError(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-05-22 00:51:08,155 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/fragments/header],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.FragmentController.getHeader()
+2019-05-22 00:51:08,156 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/fragments/footer],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.FragmentController.getFooter()
+2019-05-22 00:51:08,156 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/logger],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.Log4j2Controller.loggerTest()
+2019-05-22 00:51:08,158 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/register],methods=[POST]}" onto public java.lang.String com.entr.sbdem.controller.RegisterController.processRegistration(com.entr.sbdem.model.UserRegisterForm,org.springframework.validation.Errors,org.springframework.ui.Model,org.springframework.web.bind.support.SessionStatus)
+2019-05-22 00:51:08,158 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/register],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.RegisterController.userRegForm(org.springframework.ui.Model)
+2019-05-22 00:51:08,159 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/ || /index],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.RootSimpleController.get()
+2019-05-22 00:51:08,159 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/json-to-table],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.RootSimpleController.getJsonToTable()
+2019-05-22 00:51:08,160 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.RootSimpleController.loginPage()
+2019-05-22 00:51:08,162 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user/status],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.entr.sbdem.controller.UserController.status()
+2019-05-22 00:51:08,162 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user/{username}],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.UserController.getUserInfo(java.lang.String,org.springframework.ui.Model)
+2019-05-22 00:51:08,162 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.UserController.getUserPage()
+2019-05-22 00:51:08,163 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user/modify-user],methods=[GET]}" onto public java.lang.String com.entr.sbdem.controller.UserController.getProfilePage(org.springframework.ui.Model)
+2019-05-22 00:51:08,163 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user/modify-user],methods=[POST]}" onto public java.lang.String com.entr.sbdem.controller.UserController.updateUsPrForm(com.entr.sbdem.model.UserModifyForm,org.springframework.validation.Errors,org.springframework.web.bind.support.SessionStatus,org.springframework.web.servlet.mvc.support.RedirectAttributes,org.springframework.ui.Model)
+2019-05-22 00:51:08,163 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/user/modify-user-img],methods=[POST]}" onto public java.lang.String com.entr.sbdem.controller.UserController.updateAvImg(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes) throws com.entr.sbdem.exception.StorageException
+2019-05-22 00:51:08,168 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/get-user/{username}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.entr.sbdem.entity.SpUser> com.entr.sbdem.restController.AdminApiController.getUserByUsername(java.lang.String) throws com.entr.sbdem.exception.UserNotFoundException
+2019-05-22 00:51:08,169 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/update-user-info/{username}],methods=[PATCH],consumes=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.entr.sbdem.restController.AdminApiController.updateUserInfo(java.lang.String,com.entr.sbdem.model.UserModifyForm)
+2019-05-22 00:51:08,169 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/create-user],methods=[POST],consumes=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<com.entr.sbdem.entity.SpUser> com.entr.sbdem.restController.AdminApiController.createUser(com.entr.sbdem.model.UserRegisterForm) throws com.entr.sbdem.exception.UserAlreadyExistsException
+2019-05-22 00:51:08,170 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/get-all-users],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.entr.sbdem.entity.SpUser>> com.entr.sbdem.restController.AdminApiController.getAllUsers()
+2019-05-22 00:51:08,170 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/delete-user/{username}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.entr.sbdem.restController.AdminApiController.deleteUser(java.lang.String) throws com.entr.sbdem.exception.UserNotFoundException
+2019-05-22 00:51:08,170 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin/api/full-update-user/{id}],methods=[PUT],consumes=[application/json;charset=UTF-8]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.entr.sbdem.restController.AdminApiController.fullUpdateUser(java.lang.String,com.entr.sbdem.entity.SpUser) throws com.entr.sbdem.exception.UserNotFoundException
+2019-05-22 00:51:08,171 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.entr.sbdem.restController.adminPageController.getAdminPage()
+2019-05-22 00:51:08,206 INFO o.s.w.s.h.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-22 00:51:08,206 INFO o.s.w.s.h.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-22 00:51:08,206 INFO o.s.w.s.h.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/upload/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-22 00:51:08,206 INFO o.s.w.s.h.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-22 00:51:08,221 INFO o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [restartedMain] Detected @ExceptionHandler methods in customMvcResponseEntityExceptionHandle
+2019-05-22 00:51:08,222 INFO o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [restartedMain] Detected @ExceptionHandler methods in restResponseEntityExceptionHandler
+2019-05-22 00:51:08,306 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2019-05-22 00:51:08,523 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-05-22 00:51:08,556 INFO o.s.j.e.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2019-05-22 00:51:08,558 INFO o.s.j.e.MBeanExporter [restartedMain] Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-05-22 00:51:08,563 INFO o.s.j.e.MBeanExporter [restartedMain] Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-05-22 00:51:08,573 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-05-22 00:51:08,581 INFO o.a.j.l.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-05-22 00:51:08,591 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-22 00:51:08,594 INFO o.s.b.StartupInfoLogger [restartedMain] Started SbdemApplication in 8.155 seconds (JVM running for 9.029)
+2019-05-22 00:51:20,833 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-22 00:51:20,834 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-22 00:51:20,850 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
