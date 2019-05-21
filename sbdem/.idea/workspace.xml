@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cd2bd68-a45e-4edd-b661-2675f51a96c0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/service/AmazonClient.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/logs/spring-boot-logger-log4j2.log" afterPath="$PROJECT_DIR$/logs/spring-boot-logger-log4j2.log" />
-      <change beforePath="$PROJECT_DIR$/sbdem.iml" afterPath="$PROJECT_DIR$/sbdem.iml" />
-      <change beforePath="$PROJECT_DIR$/sbdem/logs/spring-boot-logger-log4j2.log" afterPath="$PROJECT_DIR$/sbdem/logs/spring-boot-logger-log4j2.log" />
-      <change beforePath="$PROJECT_DIR$/sbdem/pom.xml" afterPath="$PROJECT_DIR$/sbdem/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/config/BeanConfig.java" afterPath="$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/config/BeanConfig.java" />
-      <change beforePath="$PROJECT_DIR$/sbdem/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/sbdem/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/sbdem/src/main/resources/static/js/createTableFromFetchJson.js" afterPath="$PROJECT_DIR$/sbdem/src/main/resources/static/js/createTableFromFetchJson.js" />
-      <change beforePath="$PROJECT_DIR$/sbdem/src/main/resources/static/js/jsonToHtmlTable.js" afterPath="$PROJECT_DIR$/sbdem/src/main/resources/static/js/jsonToHtmlTable.js" />
-      <change beforePath="$PROJECT_DIR$/sbdem/src/main/resources/templates/fragments/header.html" afterPath="$PROJECT_DIR$/sbdem/src/main/resources/templates/fragments/header.html" />
-      <change beforePath="$PROJECT_DIR$/sbdem/src/main/resources/templates/json-to-table.html" afterPath="$PROJECT_DIR$/sbdem/src/main/resources/templates/json-to-table.html" />
-      <change beforePath="$PROJECT_DIR$/sbdem/src/test/java/com/entr/sbdem/SbdemApplicationTests.java" afterPath="$PROJECT_DIR$/sbdem/src/test/java/com/entr/sbdem/SbdemApplicationTests.java" />
-      <change beforePath="$PROJECT_DIR$/sbdem/src/test/java/com/entr/sbdem/controller/LoginSpringSecurityTest.java" afterPath="$PROJECT_DIR$/sbdem/src/test/java/com/entr/sbdem/controller/LoginSpringSecurityTest.java" />
-      <change beforePath="$PROJECT_DIR$/sbdem/src/test/java/com/entr/sbdem/controller/RegisterControllerStandaloneSetupTest.java" afterPath="$PROJECT_DIR$/sbdem/src/test/java/com/entr/sbdem/controller/RegisterControllerStandaloneSetupTest.java" />
-      <change beforePath="$PROJECT_DIR$/sbdem/src/test/java/com/entr/sbdem/controller/UserControllerTest.java" afterPath="$PROJECT_DIR$/sbdem/src/test/java/com/entr/sbdem/controller/UserControllerTest.java" />
+      <change beforePath="$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/entity/SpUser.java" afterPath="$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/entity/SpUser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/sbdem/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,6 +25,32 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="heroku" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="heroku" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="heroku" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d8aimaht32a7jr: database" type="6d9b600a:PostgresImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="heroku" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d8aimaht32a7jr: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="heroku" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d8aimaht32a7jr: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -76,8 +84,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
-              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="320">
+              <caret line="85" column="51" lean-forward="false" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -86,38 +94,8 @@
       <file leaf-file-name="AmazonClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/service/AmazonClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sbdem/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="127" column="21" lean-forward="false" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json-to-table.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/templates/json-to-table.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jsonToHtmlTable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/static/js/jsonToHtmlTable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3780">
-              <caret line="189" column="65" lean-forward="false" selection-start-line="189" selection-start-column="65" selection-end-line="189" selection-end-column="65" />
+            <state relative-caret-position="20">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,7 +136,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/sbdem/src/test/java/com/entr/sbdem/restController/AdminApiControllerInregrationTest.java" />
-        <option value="$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/entity/SpUser.java" />
         <option value="$PROJECT_DIR$/sbdem/src/main/resources/sql/role_import-postgresql.sql" />
         <option value="$PROJECT_DIR$/sbdem/src/main/resources/sql/create_admin_after_role_import.sql" />
         <option value="$PROJECT_DIR$/sbdem/src/main/resources/templates/fragments/header.html" />
@@ -174,6 +151,7 @@
         <option value="$PROJECT_DIR$/sbdem/pom.xml" />
         <option value="$PROJECT_DIR$/sbdem/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/config/BeanConfig.java" />
+        <option value="$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/entity/SpUser.java" />
       </list>
     </option>
   </component>
@@ -197,7 +175,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="285" />
     <option name="y" value="5" />
     <option name="width" value="1636" />
@@ -292,6 +270,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sbdem" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sbdem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sbdem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sbdem" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,6 +303,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sbdem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sbdem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sbdem" type="b2602c69:ProjectViewProjectNode" />
@@ -621,7 +617,7 @@
       <workItem from="1558372717379" duration="57000" />
       <workItem from="1558376184317" duration="1133000" />
       <workItem from="1558386049958" duration="2112000" />
-      <workItem from="1558433747051" duration="3515000" />
+      <workItem from="1558433747051" duration="4095000" />
     </task>
     <servers />
   </component>
@@ -658,7 +654,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24163000" />
+    <option name="totallyTimeSpent" value="24743000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,7 +666,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -719,14 +715,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sbdem/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="52" column="55" lean-forward="false" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b538e2ec-1852-445b-8d6a-1f950d00c874/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -809,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/entity/SpUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ddfe434f-81d4-4079-ae92-0bb4172f6ccb/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -883,30 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1471">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/templates/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/templates/user-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="108" lean-forward="false" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/cfbab7ba/ddfe434f-81d4-4079-ae92-0bb4172f6ccb/d8aimaht32a7jr.public.spusers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ctid" enabled="false" />
-          </column-attributes>
         </state>
       </provider>
     </entry>
@@ -1013,37 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="158" column="21" lean-forward="false" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/templates/json-to-table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/static/js/jsonToHtmlTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3780">
-          <caret line="189" column="65" lean-forward="false" selection-start-line="189" selection-start-column="65" selection-end-line="189" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/service/AmazonClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sbdem/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="127" column="21" lean-forward="false" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1064,10 +990,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/static/images/15477368265271.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/templates/json-to-table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/cfbab7ba/ddfe434f-81d4-4079-ae92-0bb4172f6ccb/d8aimaht32a7jr.public.spusers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ctid" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/static/js/jsonToHtmlTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="189" column="65" lean-forward="false" selection-start-line="189" selection-start-column="65" selection-end-line="189" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbdem/src/main/resources/templates/user-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="108" lean-forward="false" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbdem/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="127" column="21" lean-forward="false" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/service/AmazonClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/entity/SpUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sbdem/src/main/java/com/entr/sbdem/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="320">
+          <caret line="85" column="51" lean-forward="false" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="51" />
           <folding />
         </state>
       </provider>
