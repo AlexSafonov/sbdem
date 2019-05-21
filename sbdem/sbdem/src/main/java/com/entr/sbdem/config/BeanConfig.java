@@ -22,16 +22,16 @@ public class BeanConfig {
         return  new BCryptPasswordEncoder();
     }
 
-    @Value("$aws.keyID")
+    @Value("${aws.keyID}")
     private String aswKeyID;
 
-    @Value("$aws.secretKey")
+    @Value("${aws.secretKey}")
     private String awsSecretKey;
 
-    @Value("$aws.bucketName")
+    @Value("${aws.bucketName}")
     private String awsBucketName;
 
-    @Value("$aws.region")
+    @Value("${aws.region}")
     private String awsRegion;
 
     @Bean

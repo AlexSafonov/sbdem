@@ -43,7 +43,7 @@ public class SpUser implements UserDetails {
     private String aboutUser;
 
     @Column(name = "avatar_img_url")
-    private String avatarImgUrl = "/images/no-img.jpg";
+    private String avatarImgUrl = "/images/no-image.jpg";
 
     @Column(name = "fullname")
     private String fullName;
