@@ -1,3 +1,7 @@
+This branch was deployed to https://sbdem.herokuapp.com/
+Maven -> created jar -> dockerized -> deployed to heroku.
+Look Dockerfile for more info. 
+
 # sbdem
 Spring Boot demo (SBDem) project with :
 - Spring Data JPA + PostgreSQL,
