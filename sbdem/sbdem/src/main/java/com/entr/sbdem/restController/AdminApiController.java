@@ -10,6 +10,7 @@ import com.entr.sbdem.service.AWSs3StorageService;
 import com.entr.sbdem.service.FileSystemStorageService;
 import com.entr.sbdem.service.SpUserService;
 import com.entr.sbdem.service.StorageService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +26,9 @@ public class AdminApiController {
     private final SpUserService userService;
     private final StorageService storageService;
 
-    public AdminApiController(final SpUserService spUserService, final AWSs3StorageService storageService) {
+    public AdminApiController(final SpUserService spUserService,
+                              @Qualifier("AWSs3StorageService")
+                              final StorageService storageService) {
         this.userService = spUserService;
         this.storageService = storageService;
     }

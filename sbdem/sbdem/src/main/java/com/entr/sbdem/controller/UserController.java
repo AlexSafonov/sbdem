@@ -35,8 +35,8 @@ public class UserController {
     private final AuthenticationFacade authenticationFacade;
 
     public UserController(final SpUserService userService,
-
-                          final AWSs3StorageService storageService ,
+                          @Qualifier("AWSs3StorageService")
+                          final StorageService storageService ,
                           final AuthenticationFacadeImpl authenticationFacadeImpl) {
         this.userService = userService;
         this.storageService = storageService;

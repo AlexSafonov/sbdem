@@ -17,7 +17,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggler">
-                <a class="navbar-brand" th:href="@{/}">App Name</a>
+                <a class="navbar-brand" th:href="@{/}">Spring Web</a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" th:href="@{/json-to-table}">Json2TAble</a>
@@ -27,7 +27,7 @@
                             User Section
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" th:href="@{${'/user/'}+${#authentication.name}}" >personal information</a>
+                            <a class="dropdown-item" th:href="@{${'/user/'}+${#authentication.name}}" > Personal information </a>
                             <a class="dropdown-item" th:href="@{/user/modify-user}">Modify your personal information</a>
                         </div>
                     </li>
