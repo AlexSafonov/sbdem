@@ -166,10 +166,15 @@ function createControlPanel(parentId, parentOfTable, parentOfShowHTML) {
     let showHTMLButton = document.createElement('button');
     showHTMLButton.innerHTML = "Show HTML";
 
+    let clearHTMLButton = document.createElement('button');
+    clearHTMLButton.innerHTML = "Clear HTML tab";
+
     pForTextArea.appendChild(textArea);
+
     pForButtons.appendChild(createButton);
     pForButtons.appendChild(removeButton);
     pForButtons.appendChild(showHTMLButton);
+    pForButtons.appendChild(clearHTMLButton);
 
     parentElement.appendChild(pForTextArea);
     parentElement.appendChild(pForButtons);
@@ -195,9 +200,14 @@ function createControlPanel(parentId, parentOfTable, parentOfShowHTML) {
         let text = document.createTextNode("<"+selectTableDiv.tagName +">"+selectTableDiv.innerHTML+ "</"+selectTableDiv.tagName+">");
         selectShowHTML.appendChild(text);
     }
+    function clearHTML() {
+        document.getElementById(parentOfShowHTML).innerText = "";
+    }
+
     removeButton.addEventListener("click", removeLastTable);
     createButton.addEventListener("click", showTable);
     showHTMLButton.addEventListener("click", showHTML);
+    clearHTMLButton.addEventListener("click", clearHTML);
 }
 document.onreadystatechange = function () {
     if (document.readyState === "interactive") {

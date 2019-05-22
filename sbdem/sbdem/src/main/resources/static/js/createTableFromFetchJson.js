@@ -227,7 +227,7 @@ function createPostPanel(parentId) {
             });
     }
     function findUser(){
-        fetch(`http://localhost:8080/admin/api/get-user/`+findUserInput.value, {
+        fetch(`admin/api/get-user/`+findUserInput.value, {
             method: 'GET',
             credentials: 'include',
             headers: {
@@ -247,7 +247,7 @@ function createPostPanel(parentId) {
     }
 
     function postUserAsJson() {
-        fetch('http://localhost:8080/admin/api/create-user', {
+        fetch('admin/api/create-user', {
             method: 'POST',
             credentials: 'include',
             headers : headers,
@@ -257,7 +257,7 @@ function createPostPanel(parentId) {
     }
     
     function deleteUser() {
-        fetch('http://localhost:8080/admin/api/delete-user/'+allFieldsOfUser.username.value, {
+        fetch('admin/api/delete-user/'+allFieldsOfUser.username.value, {
             method: 'DELETE',
             credentials: 'include',
             headers : headers,
@@ -266,7 +266,7 @@ function createPostPanel(parentId) {
     }
     
     function putUser() {
-        fetch('http://localhost:8080/admin/api/full-update-user/'+allFieldsOfUser.spUserId.value, {
+        fetch('admin/api/full-update-user/'+allFieldsOfUser.spUserId.value, {
             method: 'PUT',
             credentials: 'include',
             headers : headers,
@@ -275,7 +275,7 @@ function createPostPanel(parentId) {
             .then(response =>  afterFetch(response, "responseFromServer"));
     }
     function patchUser() {
-        fetch('http://localhost:8080/admin/api/update-user-info/'+allFieldsOfUser.username.value, {
+        fetch('admin/api/update-user-info/'+allFieldsOfUser.username.value, {
             method: 'PATCH',
             credentials: 'include',
             headers : headers,
@@ -284,7 +284,7 @@ function createPostPanel(parentId) {
             .then(response =>  afterFetch(response, "responseFromServer"));
     }
     function getAllUsers() {
-        fetch(`http://localhost:8080/admin/api/get-all-users`, {
+        fetch(`admin/api/get-all-users`, {
             method: 'GET',
             credentials: 'include',
             headers: {
