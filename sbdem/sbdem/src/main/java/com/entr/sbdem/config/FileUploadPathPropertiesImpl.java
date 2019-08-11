@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 
 @Component
 public class FileUploadPathPropertiesImpl implements  FileUploadPathProperties{
-    //Root path - for me it is desktop
+    //Root path - for me - desktop
     private final Path pathToHome = Paths.get(FileSystemView.getFileSystemView().getHomeDirectory().getAbsolutePath());
     //Path to upload dir. Where all upload files will be stored.
     private final Path pathToUploadDir;
@@ -18,9 +18,9 @@ public class FileUploadPathPropertiesImpl implements  FileUploadPathProperties{
     private final String pathToUploadDirToUriToString ;
 
     public FileUploadPathPropertiesImpl() {
-        this.pathToUploadDir = pathToHome.resolve("sbdem\\upload");
-        this.pathToUploadImages = pathToHome.resolve("sbdem\\upload\\uploadImages");
-        this.pathToUploadDirToUriToString = pathToHome.resolve("sbdem\\upload").toUri().toString().replaceFirst("\\w+\\:/+","");
+        this.pathToUploadDir = pathToHome.resolve("sbdem\\sbdem\\upload");
+        this.pathToUploadImages = pathToHome.resolve("sbdem\\sbdem\\upload\\uploadImages");
+        this.pathToUploadDirToUriToString = pathToHome.resolve("sbdem\\sbdem\\upload").toUri().toString().replaceFirst("\\w+\\:/+","");
     }
 
     @Override

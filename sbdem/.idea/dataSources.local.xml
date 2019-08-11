@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="ideacnp@localhost" uuid="b538e2ec-1852-445b-8d6a-1f950d00c874">
-      <database-info product="PostgreSQL" version="10.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+      <database-info product="PostgreSQL" version="10.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2" dbms="POSTGRES" exact-version="10.3">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
@@ -11,7 +11,7 @@
       <introspection-schemas>ideacnp:public</introspection-schemas>
     </data-source>
     <data-source name="heroku" uuid="ddfe434f-81d4-4079-ae92-0bb4172f6ccb">
-      <database-info product="PostgreSQL" version="11.2 (Ubuntu 11.2-1.pgdg16.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+      <database-info product="PostgreSQL" version="11.2 (Ubuntu 11.2-1.pgdg16.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2" dbms="POSTGRES" exact-version="11.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />

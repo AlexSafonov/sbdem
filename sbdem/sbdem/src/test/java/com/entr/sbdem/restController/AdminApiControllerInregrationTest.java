@@ -122,7 +122,6 @@ public class AdminApiControllerInregrationTest {
         SpUser user = userService.findUserByUsername(newUser.getUsername());
         assertThat(user.getAvatarImgUrl(), is("/images/no-image.jpg"));
     }
-
     @Test
     @WithMockUser(roles = {"ADMIN"}, username = "TESTADMIN")
     public void deleteExistedUser_returnOk() throws Exception{
@@ -131,7 +130,7 @@ public class AdminApiControllerInregrationTest {
                         .getFileSystemView()
                         .getHomeDirectory()
                         .getAbsolutePath())
-                        .resolve("sbdem\\upload\\uploadImages"));
+                        .resolve("sbdem\\sbdem\\upload\\uploadImages"));
 
         Path tempFilesPath = uploadPathProperties.getPathToUploadImages().resolve("TESTUSER");
         if(!Files.exists(tempFilesPath)) {
@@ -144,6 +143,7 @@ public class AdminApiControllerInregrationTest {
                 .andExpect(status().isOk())
                 .andDo(print());
     }
+
     @Test
     @WithMockUser(roles = {"ADMIN"}, username = "TESTADMIN")
     public void putRequestExistentUser_returnOk() throws Exception{

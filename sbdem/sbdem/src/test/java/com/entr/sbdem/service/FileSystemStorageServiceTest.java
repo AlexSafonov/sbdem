@@ -51,7 +51,7 @@ public class FileSystemStorageServiceTest {
                         .getFileSystemView()
                         .getHomeDirectory()
                         .getAbsolutePath())
-                        .resolve("sbdem\\upload\\uploadImages"));
+                        .resolve("sbdem\\sbdem\\upload\\uploadImages"));
 
         Path tempFilesPath = uploadPathProperties.getPathToUploadImages().resolve("tempDirSimulatingUserDir");
         Files.createDirectory(tempFilesPath);

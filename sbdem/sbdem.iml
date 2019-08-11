@@ -20,8 +20,8 @@
     <content url="file://$MODULE_DIR$/sbdem">
       <sourceFolder url="file://$MODULE_DIR$/sbdem/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sbdem/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/sbdem/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/sbdem/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/sbdem/src/test/java/com/entr/sbdem" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/sbdem/target" />
     </content>
     <orderEntry type="inheritedJdk" />
